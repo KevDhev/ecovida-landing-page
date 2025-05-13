@@ -1,6 +1,10 @@
 /*================================  GENERAL STYLES ============================*/
+:root{
+    --white-text: white;
+}
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Share Tech", sans-serif;
 }
 
 /*================================  HEADER STYLES ============================*/
@@ -16,6 +20,9 @@
 
 .h-title{
     margin-right: auto;
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .h-title:hover{
@@ -35,3 +42,158 @@
     padding: 10px;
     transition: all ease-in-out 400ms;
 }
+/*================================  HOME STYLES ============================*/
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(10,10,15, 0.70), rgba(10,10,15, 0.70)), url(../img/glass.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    color: var(--white-text);
+}
+
+.home h2{
+    font-weight: 400px;
+    font-size: 50px;
+}
+
+.home p{
+    font-size: 25px;
+}
+
+.home a{
+    display: inline-block;
+    text-align: center;
+    background-color: orangered;
+    font-size: 20px;
+    font-weight: 400px;
+    margin-top: 10px;
+    width: 6rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 15px;
+    transition: all ease-in-out 300ms;
+}
+
+.home a:hover{
+    transform: scale(1.1);
+    background-color: #fb5c22;
+}
+/*================================  MISSION STYLES ============================*/
+.mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.mission h2{
+    font-weight: 400px;
+    font-size: 35px;
+}
+
+.mission p{
+    font-size: 25px;
+    max-width: 70ch;
+    text-align: left;
+}
+/*================================  IMPACT STYLES ============================*/
+.impact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.impact h2{
+    font-weight: 400px;
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+
+.impact-content{
+    width: 80%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+}
+
+.impact-content ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.impact-content img{
+    width: 500px;
+    height: 250px;
+    margin-left: auto;
+}
+
+/*================================  PROJECTS STYLES ============================*/
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(10,10,15, 0.70), rgba(10,10,15, 0.70)), url(../img/forest.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    color: var(--white-text);  
+}
+
+.projects h2{
+    font-weight: 400px;
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+
+.projects-content{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 250px;
+    font-size: 25px;  
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    max-width: 30ch;
+}
+
+.learn-more{
+    display: inline-block;
+    text-align: center;
+    background-color: orangered;
+    font-size: 20px;
+    font-weight: 400px;
+    margin-top: 10px;
+    width: 7rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 15px;
+    transition: all ease-in-out 400ms;
+}
+
+.learn-more:hover{
+    transform: scale(1.1);
+    background-color: #fb5c22;
+}
+
+/*===============================  VOLUNTEERS STYLES ==========================*/
+/*================================  HOW-HELP STYLES ============================*/
+/*================================  CONTACT STYLES ============================*/
