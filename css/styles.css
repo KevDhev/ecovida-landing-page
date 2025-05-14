@@ -1,10 +1,16 @@
 /*================================  GENERAL STYLES ============================*/
 :root{
     --white-text: white;
+    --color-primary: orangered;
+    --color-secundary: #fb5c22;
 }
 
 *{
     font-family: "Share Tech", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /*================================  HEADER STYLES ============================*/
@@ -12,10 +18,15 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    background-color: var(--white-text);
+    top: 0;
+    left: 0;
     width: 100%;
     height: 70px;
     padding: 5px 1rem;
     border-bottom: 1px solid black;
+    z-index: 100;
 }
 
 .h-title{
@@ -52,6 +63,7 @@
     background-size: cover;
     width: 100%;
     height: 500px;
+    margin-top: 70px;
     color: var(--white-text);
 }
 
@@ -67,7 +79,7 @@
 .home a{
     display: inline-block;
     text-align: center;
-    background-color: orangered;
+    background-color: var(--color-primary);
     font-size: 20px;
     font-weight: 400px;
     margin-top: 10px;
@@ -80,7 +92,7 @@
 
 .home a:hover{
     transform: scale(1.1);
-    background-color: #fb5c22;
+    background-color: var(--color-secundary);
 }
 /*================================  MISSION STYLES ============================*/
 .mission{
@@ -119,7 +131,7 @@
 }
 
 .impact-content{
-    width: 80%;
+    width: 70%;
     height: 250px;
     display: flex;
     flex-direction: row;
@@ -137,6 +149,7 @@
 .impact-content img{
     width: 500px;
     height: 250px;
+    border-radius: 15px;
     margin-left: auto;
 }
 
@@ -178,7 +191,7 @@
 .learn-more{
     display: inline-block;
     text-align: center;
-    background-color: orangered;
+    background-color: var(--color-primary);
     font-size: 20px;
     font-weight: 400px;
     margin-top: 10px;
@@ -191,9 +204,183 @@
 
 .learn-more:hover{
     transform: scale(1.1);
-    background-color: #fb5c22;
+    background-color: var(--color-secundary);
 }
 
 /*===============================  VOLUNTEERS STYLES ==========================*/
+.volunteers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.volunteers h2{
+    font-weight: 400px;
+    font-size: 35px;
+}
+
+.volunteer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 45rem;
+}
+
+.statement,
+.photo{
+    
+    margin-left: auto;
+}
+
+.volunteer blockquote p{
+    max-width: 40ch;
+    font-style: italic;
+    color: var(--color-primary);
+}
+
+.volunteer blockquote footer{
+    font-size: 20px;
+}
+
+.volunteer blockquote cite{
+    font-weight: bold;
+}
+
+.volunteer-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--color-primary);
+}
+
 /*================================  HOW-HELP STYLES ============================*/
+.how-help{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.how-help h2{
+    font-weight: 400px;
+    font-size: 35px;   
+    margin-bottom: 2rem; 
+}
+
+.help-content{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: 250px;
+}
+
+.how-help img{
+    width: 500px;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.how-help ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    font-size: 25px;
+    list-style: disc;
+}
+
 /*================================  CONTACT STYLES ============================*/
+.contact{
+   display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;  
+}
+
+.contact h2{
+    font-weight: 400px;
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    gap: 1.5rem;
+    width: 60%;
+    height: 500px;
+    font-size: 25px;
+}
+
+.contact-form input{
+    width: 500px;
+    padding: 5px;
+}
+
+.contact-form input:focus{
+    outline: none;
+    border: 2px solid var(--color-primary);
+}
+
+.contact-form textarea{
+    width: 500px;
+    height: 125px;
+}
+
+.contact-form textarea:focus{
+    outline: none;
+    border: 2px solid var(--color-primary);
+}
+
+.contact-form button{
+    background-color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 400px;
+    color: white;
+    margin-top: 10px;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 15px;
+    transition: all ease-in-out 400ms;    
+}
+
+.contact-form button:hover{
+    cursor: pointer;
+    background-color: var(--color-secundary);
+    transform: scale(1.1);
+}
+
+/*================================  CONTACT STYLES ============================*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+.footer div{
+    font-size: 20px;
+    color: var(--white-text);
+}
+
+.change-color{
+    color: var(--color-primary);
+}
+
+.footer a:hover{
+    color: var(--color-secundary);
+}
